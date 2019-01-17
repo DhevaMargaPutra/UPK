@@ -1,0 +1,36 @@
+.opening {
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    background-color: yellow;
+    position: absolute;
+    animation-name: slide;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+.opening-content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+@keyframes slide {
+    0% {
+        right: 0px;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+.logo:hover {
+    transform: scale(1.1, 1.1);
+}

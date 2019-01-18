@@ -8,7 +8,7 @@
     src: url('Sarabun-Regular.ttf')
 }
 
-body {
+html, body {
     height: 100%;
 }
 
@@ -61,14 +61,20 @@ p {
 
 .beranda {
     height: 100%;
-    padding: 3rem;
+    /* margin-top: 60px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.my-menu {
+/* .my-menu {
     height: 100%;
     padding: 3rem;
-}
+} */
 
 .navbar {
     position: fixed;
+    width: 100%;
+    top: 0px;
 }

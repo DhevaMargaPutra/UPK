@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
     <title>KFD - Materi</title>
 </head>
-<body>
+<body id="body" onscroll="checkScroll()">
     <!-- Navigasi -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">KFD</a>
@@ -20,23 +19,29 @@
           <div class="navbar-nav">
             <a class="nav-item nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link active" href="materi.html">Materi</a>
-            <a class="nav-item nav-link" href="#">Soal</a>
+            <a class="nav-item nav-link" href="soal.html">Soal</a>
             <a class="nav-item nav-link" href="#">Simulasi</a>
             <a class="nav-item nav-link" href="#">Profil</a>
           </div>
         </div>
     </nav>
 
+    <!-- Up Button -->
+    <a id="up-button" href="#top" class="btn btn-light up-button">Up</a>
+
+    <!-- Div pengganti margin atas -->
+    <div id="top" style="width: 100%; height: 56px; background-color: white;"></div>
+
     <!-- Daftar isi -->
-    <div class="materi" style="margin-top: 56px; background-color: yellow">
+    <div class="materi">
         <h1>Daftar Isi</h1>
-        <h2><a href="#">Pengertian Fotografi</a></h2>
-        <h2><a href="#">Sejarah Fotografi</a></h2>
-        <h2><a href="#">Jenis-jenis Fotografi</a></h2>
+        <h2><a href="#bab1">Pengertian Fotografi</a></h2>
+        <h2><a href="#bab2">Sejarah Fotografi</a></h2>
+        <h2><a href="#bab3">Jenis-jenis Fotografi</a></h2>
     </div>
 
     <!-- Bab 1 -->
-    <div class="materi">
+    <div id="bab1" class="materi">
         <h2>Pengertian Fotografi</h2>
         <p>APA ITU FOTOGRAFI menurut Evin | Global
 
@@ -67,7 +72,7 @@
     </div>
 
     <!-- Bab 2 -->
-    <div class="materi">
+    <div id="bab2" class="materi">
         <h2>Sejarah Fotografi</h2>
         <p>Sejarah awal Fotografi menurut Evin | Global
             Tahukah Anda bahwa prinsip dasar fotografi mulai diamati oleh filsuf Yunani
@@ -109,7 +114,7 @@
     </div>
 
     <!-- Bab 3 -->
-    <div  class="materi">
+    <div id="bab3" class="materi">
         <h2>Jenis-jenis Fotografi</h2>
         <p>Jenis jenis Fotografi Populer, Yang Manakah Jenis
 

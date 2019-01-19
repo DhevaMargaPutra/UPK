@@ -1,10 +1,5 @@
 @font-face {
-    font-family: head-font;
-    src: url('ChelseaMarket-Regular.ttf');
-}
-
-@font-face {
-    font-family: par-font;
+    font-family: myfont;
     src: url('Sarabun-Regular.ttf')
 }
 
@@ -12,13 +7,28 @@ html, body {
     height: 100%;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
-    font-family: 'Chelsea Market', head-font;
+    font-family: 'Sarabun', myfont;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    font-weight: bold;
+    color: inherit;
+    text-decoration-line: inherit;
+    
 }
 
 p {
-    font-family: 'Sarabun', par-font;
+    font-family: 'Sarabun', myfont;
     font-size: large;
 }
 
@@ -27,7 +37,6 @@ p {
     height: 100%;
     width: 100%;
     z-index: 3;
-    background-color: yellow;
     position: absolute;
     animation-name: slide;
     animation-duration: 500ms;
@@ -62,17 +71,15 @@ p {
 
 .beranda {
     height: 100%;
-    /* margin-top: 60px; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-/* .my-menu {
-    height: 100%;
+.materi {
     padding: 3rem;
-} */
+}
 
 .navbar {
     position: fixed;

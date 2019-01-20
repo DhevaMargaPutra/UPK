@@ -28,18 +28,18 @@
 
     <!-- Soal -->
     <div class="container-soal">
-        <button type="button" class="btn btn-dark nav-soal"><-</button>
+        <button id="prev-soal" type="button" class="btn btn-dark nav-soal"><-</button>
         <div class="soal">
             <h1 style="color: #f8f9fa">Soal</h1>
-            <h2 style="text-align: justify;">1.</h2>
-            <p style="overflow: scroll;">Fotografi berasal dari bahasa Yunani,photos artinya ….</p>
-            <p><input type="radio" name="jawaban">  Banyak</p>
-            <p><input type="radio" name="jawaban">  Cahaya</p>
-            <p><input type="radio" name="jawaban">  Gambar</p>
-            <p><input type="radio" name="jawaban">  Gerak</p>
+            <h2 id="nomor-soal" style="text-align: justify;">1.</h2>
+            <p id="soal" style="overflow: scroll;">Soal Container</p>
+            <input type="radio" name="jawaban"><label id="opsi0" for="radio0">opsi0</label><br>
+            <input type="radio" name="jawaban"><label id="opsi1" for="radio1">opsi1</label><br>
+            <input type="radio" name="jawaban"><label id="opsi2" for="radio2">opsi2</label><br>
+            <input type="radio" name="jawaban"><label id="opsi3" for="radio3">opsi3</label><br>
             <button type="button" class="btn btn-light">Submit</button>
         </div>
-        <button type="button" class="btn btn-dark nav-soal">-></button>
+        <button id="next-soal" type="button" class="btn btn-dark nav-soal">-></button>
     </div>
     
     <script src="soal.js"></script>

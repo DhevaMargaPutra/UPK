@@ -28,6 +28,7 @@ a:hover {
 p {
     font-family: 'Sarabun', myfont;
     font-size: large;
+    text-align: justify;
 }
 
 .opening {
@@ -137,8 +138,4 @@ p {
     font-weight: bold;
     font-size: 1.5rem;
     margin: auto;
-}
-
-::-webkit-scrollbar {
-    width: 20px;
 }

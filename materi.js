@@ -18,10 +18,8 @@ for (let i = 0; i < divMateri.length; i++) {
 const upButton = document.getElementById('up-button');
 function checkScroll() {
     if (scrollY > 300) {
-        upButton.style.display = 'initial';
-        console.log('show');
+        upButton.style.animationName = 'showUpButton';
     } else {
-        upButton.style.display = 'none';
-        console.log('hide');
+        upButton.style.animationName = 'hideUpButton';
     }
 }

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
     <title>KFD - soal latihan</title>
 </head>
 <body>
@@ -16,12 +18,30 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link active" href="materi.html">Materi</a>
-            <a class="nav-item nav-link" href="#">Soal</a>
+            <a class="nav-item nav-link" href="materi.html">Materi</a>
+            <a class="nav-item nav-link active" href="#">Soal</a>
             <a class="nav-item nav-link" href="#">Simulasi</a>
             <a class="nav-item nav-link" href="#">Profil</a>
           </div>
         </div>
     </nav>
+
+    <!-- Soal -->
+    <div class="container-soal">
+        <button type="button" class="btn btn-dark nav-soal"><-</button>
+        <div class="soal">
+            <h1 style="color: #f8f9fa">Soal</h1>
+            <h2 style="text-align: justify;">1.</h2>
+            <p style="overflow: scroll;">Fotografi berasal dari bahasa Yunani,photos artinya ….</p>
+            <p><input type="radio" name="jawaban">  Banyak</p>
+            <p><input type="radio" name="jawaban">  Cahaya</p>
+            <p><input type="radio" name="jawaban">  Gambar</p>
+            <p><input type="radio" name="jawaban">  Gerak</p>
+            <button type="button" class="btn btn-light">Submit</button>
+        </div>
+        <button type="button" class="btn btn-dark nav-soal">-></button>
+    </div>
+    
+    <script src="soal.js"></script>
 </body>
 </html>

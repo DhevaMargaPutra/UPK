@@ -33,15 +33,29 @@
             <h1 style="color: #f8f9fa">Soal</h1>
             <h2 id="nomor-soal" style="text-align: justify;">1.</h2>
             <p id="soal" style="overflow: scroll;">Soal Container</p>
-            <input type="radio" name="jawaban"><label id="opsi0" for="radio0">opsi0</label><br>
-            <input type="radio" name="jawaban"><label id="opsi1" for="radio1">opsi1</label><br>
-            <input type="radio" name="jawaban"><label id="opsi2" for="radio2">opsi2</label><br>
-            <input type="radio" name="jawaban"><label id="opsi3" for="radio3">opsi3</label><br>
-            <button type="button" class="btn btn-light">Submit</button>
+            <input id="radio-opsi0" type="radio" name="jawaban"><label id="label-opsi0" for="radio0">opsi0</label><br>
+            <input id="radio-opsi1" type="radio" name="jawaban"><label id="label-opsi1" for="radio1">opsi1</label><br>
+            <input id="radio-opsi2" type="radio" name="jawaban"><label id="label-opsi2" for="radio2">opsi2</label><br>
+            <input id="radio-opsi3" type="radio" name="jawaban"><label id="label-opsi3" for="radio3">opsi3</label><br>
+            <button id="submit" type="button" class="btn btn-light">Submit</button>
+            <button id="kumpulkan" type="button" class="btn btn-light">Kumpulkan</button>
         </div>
         <button id="next-soal" type="button" class="btn btn-dark nav-soal">-></button>
     </div>
     
+    <!-- Hasil -->
+    <div id="hasil" style="background-color: #343a40; padding: 1.5rem;">
+        <p style="color: #f8f9fa; text-align: center;">Hasil</p>
+        <p id="benar" style="color: #f8f9fa">Benar: 0</p>
+        <p id="salah" style="color: #f8f9fa">Salah: 0</p>
+        <p id="nilai" style="color: #f8f9fa">Nilai: 0</p>
+    </div>
+
     <script src="soal.js"></script>
 </body>
+<footer style="background-color: yellow; padding: 1.5rem;">
+    <p style="color: #343a40; text-align: center;">Catatan:</p>
+    <p style="color: #343a40">- Submit dahulu sebelum lanjut ke soal berikutnya</p>
+    <p style="color: #343a40">- Jika Anda meninggalkan halaman ini jawaban Anda akan hilang</p>
+</footer>
 </html>

@@ -7,13 +7,18 @@ html, body {
     height: 100%;
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
     font-family: 'Sarabun', myfont;
 }
 
 h1 {
     font-weight: bold;
+}
+
+h3 {
+    text-align: left;
+    margin-top: 2rem;
 }
 
 a {
@@ -27,8 +32,12 @@ a:hover {
 
 p {
     font-family: 'Sarabun', myfont;
-    font-size: large;
-    text-align: justify;
+    /* font-size: large; */
+    /* text-align: justify; */
+}
+
+.daftarisi:hover {
+    font-weight: bolder;
 }
 
 .opening {
